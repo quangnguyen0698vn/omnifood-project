@@ -58,6 +58,32 @@ allLinks.forEach(function (link) {
   });
 });
 
+// Sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null, //null means viewport
+    threshold: 0, //trigger immediately when here section goes out of the view port, here we only have one entry
+    rootMargin: "-80px", //happen before actually reach the threshold, equals to the height of navigation
+  }
+);
+obs.observe(sectionHeroEl);
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
