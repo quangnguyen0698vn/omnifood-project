@@ -14,24 +14,26 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script defer src="js/script.js"></script>
+
 
     <title>Omifood</title>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header nav-open">
         <a href="#">
             <img class="logo" alt="Omifood logo" src="img/omnifood-logo.png" />
         </a>
 
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a href="#"" class=" main-nav-link">How it works</a></li>
-                <li><a href="#"" class=" main-nav-link">Meals</a></li>
-                <li><a href="#"" class=" main-nav-link">Testimonials</a></li>
-                <li><a href="#"" class=" main-nav-link">Pricing</a></li>
-                <li><a href="#"" class=" main-nav-link nav-cta">Try for free</a></li>
+                <li><a href="#how"" class=" main-nav-link">How it works</a></li>
+                <li><a href="#meals"" class=" main-nav-link">Meals</a></li>
+                <li><a href="#testimonials"" class=" main-nav-link">Testimonials</a></li>
+                <li><a href="#pricing"" class=" main-nav-link">Pricing</a></li>
+                <li><a href="#cta"" class=" main-nav-link nav-cta">Try for free</a></li>
             </ul>
         </nav>
 
@@ -42,14 +44,14 @@
     </header>
 
     <main>
-        <section class="section-hero">
+        <section id="hero" class="section-hero">
             <div class="hero">
                 <div class="hero-text-box">
                     <h1 class="heading-primary">A healthy meal delivered to your door, every single day</h1>
                     <p class="hero-description">The smart 365-days-per-year food subscription that will make you eat
                         healthy again. Tailored to your personal tastes and nutritional needs.</p>
-                    <a href="#" class="btn btn--full margin-right-sm">start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more &darr;</a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">start eating well</a>
+                    <a href="#how" class="btn btn--outline">Learn more &darr;</a>
 
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
@@ -70,7 +72,7 @@
             </div>
         </section>
 
-        <section class="section-featured">
+        <section id="featured" class="section-featured">
             <div class="container">
                 <h2 class="heading-featured-in">As featured in</h2>
                 <div class="logos">
@@ -83,7 +85,7 @@
             </div>
         </section>
 
-        <section class="section-how">
+        <section id="how" class="section-how">
             <div class="container">
                 <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -134,7 +136,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section id="meals" class="section-meals">
             <div class="container center-text">
                 <span class="subheading">Meals</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -244,7 +246,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section id="testimonials" class="section-testimonials">
 
             <div class="testimonials-container">
                 <span class="subheading">Testimonials</span>
@@ -323,7 +325,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section id="pricing" class="section-pricing">
             <div class="container">
                 <span class="subheading">Pricing</span>
                 <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -451,7 +453,7 @@
             </div>
         </section>
 
-        <section class="section-cta">
+        <section id="cta" class="section-cta">
             <div class="container">
             <div class="cta">
                 <div class="cta-text-box">
@@ -505,7 +507,7 @@
                     <li><a href="#" class="footer-link"><ion-icon  class="social-icon" name="logo-twitter"></ion-icon></a></li>
                 </ul>
 
-                <p class="copyright">Copyright &copy; 2022 by Omifood, Inc. All rights reserved.</p>
+                <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omifood, Inc. All rights reserved.</p>
             </div>
             <div class="address-col">
                 <p class="footer-heading">Contact us</p>
