@@ -335,24 +335,24 @@
     color: #6f6f6f;  
 }
 
-.galary {
+.gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
     padding: 1.6rem;
 }
 
-.galary-item {
+.gallery-item {
     overflow: hidden;
 }
 
-.galary-item img {
+.gallery-item img {
     display: block;
     width: 100%;
     transition: all 0.4s;
 }
 
-.galary-item img:hover {
+.gallery-item img:hover {
     transform: scale(1.1);
 }
 
